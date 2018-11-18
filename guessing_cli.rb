@@ -1,5 +1,6 @@
 # Code your solution here!
 require 'pry'
+
 def exit_call(input)
   if input == "exit"
     puts "Goodbye!"
