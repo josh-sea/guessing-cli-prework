@@ -39,7 +39,6 @@ def run_guessing_game
     exit_call(user_input)
   elsif user_input == "exit"
     exit_call(user_input)
-    
   else
     puts "The computer guessed #{number}."
   end
