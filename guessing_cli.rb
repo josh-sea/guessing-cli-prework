@@ -10,6 +10,7 @@ def run_guessing_game
 end
 
 def guessing_CLI
+  user_input = nil
   until user_input == "exit"
     run_guessing_game
     number = rand(1..6).to_s
