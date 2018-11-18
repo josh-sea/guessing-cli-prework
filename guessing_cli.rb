@@ -23,3 +23,5 @@ def guessing_CLI
   end
   exit_call
 end
+
+guessing_CLI
