@@ -10,8 +10,8 @@ def run_guessing_game
 end
 
 def guessing_CLI
-  run_guessing_game
   until user_input == "exit"
+    run_guessing_game
     number = rand(1..6).to_s
     user_input = gets.chomp
     if user_input == number
