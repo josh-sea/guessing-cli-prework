@@ -12,7 +12,9 @@ end
 def run_guessing_game
   binding.pry
   puts "Guess a number between 1 and 6."  
+  binding.pry
   number = rand(1..6).to_s
+  binding.pry
   user_input = gets.chomp
   binding.pry
   if user_input == number
