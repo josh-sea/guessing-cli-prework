@@ -18,11 +18,11 @@ def guessing_CLI
     if user_input == number
       puts "You guessed the correct number!"
     elsif user_input == "exit"
-      exit_call
+      puts "Goodbye!"
       break
     else
       puts "The computer guessed #{number}."
     end
   end
-  exit_call
+  puts "Goodbye!"
 end
