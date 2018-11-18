@@ -11,7 +11,6 @@ end
 
 def guessing_CLI
   run_guessing_game
-  welcome
   number = rand(1..6).to_s
   user_input = gets.chomp
   if user_input == number
