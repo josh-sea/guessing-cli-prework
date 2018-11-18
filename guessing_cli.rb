@@ -1,6 +1,9 @@
 # Code your solution here!
 require 'pry'
-
+def guessing_CLI
+  welcome
+  
+end
 def welcome
   puts "Guess a number between 1 and 6."
 end
@@ -11,6 +14,7 @@ end
 
 def run_guessing_game
   puts "Guess a number between 1 and 6."  
+end
   number = rand(1..6).to_s
   user_input = gets.chomp
   if user_input == number
