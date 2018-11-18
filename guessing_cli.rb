@@ -11,17 +11,16 @@ end
 
 def guessing_CLI
   run_guessing_game
-  
   number = rand(1..6).to_s
-  user_input = gets.chomp
-
-  if user_input == number
-    puts "You guessed the correct number!"
-    exit_call
-  elsif user_input == "exit"
-    exit_call
-  else
-    puts "The computer guessed #{number}."
+  until user_input == "exit"
     user_input = gets.chomp
+    if user_input == number
+      puts "You guessed the correct number!"
+      break
+    else
+      puts "The computer guessed #{number}."
+      user_input = gets.chomp
+    end
   end
+  exit_cll
 end
