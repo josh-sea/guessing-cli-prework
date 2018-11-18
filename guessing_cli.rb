@@ -8,8 +8,8 @@ def exit_call(input)
 end
 
 def run_guessing_game
-  puts "Guess a number between 1 and 6."
-  number = rand(1...6)
+  puts "Guess a number between 1 and 6."  
+  numbers
   user_input = gets.chomp
   if user_input == "#{number}"
     puts "You guessed the correct number!"
