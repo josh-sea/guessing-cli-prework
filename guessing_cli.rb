@@ -19,7 +19,6 @@ def guessing_CLI
       break
     else
       puts "The computer guessed #{number}."
-      user_input = gets.chomp
     end
   end
   exit_cll
