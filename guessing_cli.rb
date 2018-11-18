@@ -26,13 +26,9 @@ def welcome
     puts "Guess a number between 1 and 6."
 end
 
-def numbers
-  rand(1..6)
-end
-
 def run_guessing_game
   welcome
-  numbers
+  number = rand(1..6)
   user_input = gets.chomp
   if user_input == number
     puts "You guessed the correct number!"
