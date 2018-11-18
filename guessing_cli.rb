@@ -11,8 +11,8 @@ end
 
 def guessing_CLI
   run_guessing_game
-  number = rand(1..6).to_s
   until user_input == "exit"
+    number = rand(1..6).to_s
     user_input = gets.chomp
     if user_input == number
       puts "You guessed the correct number!"
@@ -21,5 +21,5 @@ def guessing_CLI
       puts "The computer guessed #{number}."
     end
   end
-  exit_cll
+  exit_call
 end
