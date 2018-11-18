@@ -1,11 +1,16 @@
 # Code your solution here!
+<<<<<<< HEAD
 
+=======
+require 'pry'
+>>>>>>> cc9e2eff7d184f507556f551536975b9d7be52e8
 def exit_call(input)
   if input == "exit"
     puts "Goodbye!"
   end
 end
 
+<<<<<<< HEAD
 def run_guessing_game
   puts "Guess a number between 1 and 6."
   number = rand(1...6)
@@ -18,6 +23,24 @@ def run_guessing_game
   else
     puts "The computer guessed #{number}."
     user_input = gets.chomp
+=======
+def welcome
+    puts "Guess a number between 1 and 6."
+end
+
+def run_guessing_game
+  welcome
+  number = rand(1...6)
+  user_input = gets.chomp
+  if user_input == number
+    puts "You guessed the correct number!"
+    exit_call(user_input)
+  elsif user_input == "exit"
+    exit_call(user_input)
+    
+  else
+    puts "The computer guessed #{number}."
+>>>>>>> cc9e2eff7d184f507556f551536975b9d7be52e8
   end
 end
 
