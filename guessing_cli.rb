@@ -19,6 +19,8 @@ def run_guessing_game
   else
     puts "The computer guessed #{number}."
     user_input = gets.chomp
+  end
+end
 
 def welcome
     puts "Guess a number between 1 and 6."
