@@ -1,5 +1,6 @@
 # Code your solution here!
 require 'pry'
+
 def guessing_CLI
   run_guessing_game
   welcome
@@ -14,10 +15,6 @@ def guessing_CLI
     puts "The computer guessed #{number}."
     user_input = gets.chomp
   end
-end
-  
-def welcome
-  puts "Guess a number between 1 and 6."
 end
 
 def exit_call
